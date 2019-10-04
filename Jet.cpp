@@ -21,11 +21,11 @@ void Jet::setNumberOfEngines(int numberOfEngines){
 	numberOfEngines = numberOfEngines; 
 }
 
-double mileage(){
+double mileageEstimate(double time){
 	double mileage = rand()%60+40;
 	int engines = getNumberOfEngines();
 	if (engines > 2){ mileage *= (5.5*engines); }
-	return mileage
+	return mileage * time;
 }
 
 string Jet::toString(){
