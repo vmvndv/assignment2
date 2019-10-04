@@ -27,3 +27,8 @@ Encapsulation in oop is the idea of bundling data and methods that work on that 
 i) The difference between Dictator and Lieutenant and Integration Manager workflows is that in the Integration Managed workflow model, each developer has two repositories-- a private and a public one-- which they work on. In this model, developers pull from the central repository to their private repos but then only push to their public repositories which then get pushed to the integration manager who merges them. Additionally, in the Dictator Lieutenant model, the Lieutenants (developers) are responsible for conflict resolution which is done by the integration manager in the other workflow model. 
 
 j) Using a Dictator and Lieutenant workflow for 100 developer would be significantly more benefitial and efficient. Doing so would protect the central repository from bad code, and ensure that merge is happening correctly. This would also help in terms of bug fixing as conflict resolution is done by each of the developers to their own code which then must be merged and pushed by the dictator to ensure that no bad code will be pushed to the central repository. 
+
+
+
+PART 5)
+The driving simulator is using polymorphism as the classes Vehicles and PoweredVehciles are being used as the interface which is then being declared as different types such as Car, Bicycle, Boat, etc. 
