@@ -7,6 +7,7 @@
 Boat::Boat() {
 	numberOfMotors = 1;
 	setBrand("Custom");
+	setFuelType("diesel");
 	setModel("YACHT"); 
 }
 
@@ -27,6 +28,7 @@ void Boat::setNumberOfMotors(int numberOfMotors){
 	numberOfMotors = numberOfMotors; 
 }
 
+//Mileage is 23 and if the number of motors is equal to or greater than 3, the mileage is increased by 3% of itself 
 double Boat::mileageEstimate(double time){
 	double mileage = 23 * time; 
 	if (numberOfMotors >= 3){

@@ -7,7 +7,7 @@
 
 #include "Vehicle.h"
 
-class Skateboard : Public Vehicle {
+class Skateboard : public Vehicle {
 
 public:
 	explicit Skateboard (string brand, string model); 

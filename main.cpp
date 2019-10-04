@@ -24,7 +24,7 @@ int main() {
     vehiclesArray[8] = new Boat("Bertram", "B3", "diesel", 3); 
     vehiclesArray[9] = new Jet ("Learjet 40", "L1", "gasoline", 3);
     vehiclesArray[10] = new Skateboard("Girl", "Penny");
-    vehiclesArray[11] = new Boat("Chaparral", "XI3", "biodiesel");
+    vehiclesArray[11] = new Boat("Chaparral", "XI3", "biodiesel", 1);
 
     printVehiclesRoster(vehiclesArray, size);
 
