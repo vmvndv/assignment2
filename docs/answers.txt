@@ -1,0 +1,29 @@
+a ) On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+b) git rev-list --all --count
+Number of commits: 7
+
+c) git log -1 .gitignore
+Date:   Wed Sep 25 18:13:30 2019 -0400
+
+d) Two important reasons why branches are used in Git are to protect the main code base so that bad code cannot get merged into the working, existing code and branches also allow multiple developers to work in parallel. 
+
+e) git log shows the commit logs while git status shows the current working tree status.
+
+f) git log --follow Vehicle.h
+
+g) git log --all --grep="file"
+
+h) Inheritace is a concept of oop in which you can derive classes from other classes using a hierarchy of classes that have common attributes and methods.
+
+Polymorphism in oop is when objects of different types are accessed through the same interface. These types can provide their own independent implementationsof the same interface and can be either dynamic or static. 
+
+Encapsulation in oop is the idea of bundling data and methods that work on that data within one unit which can be implemented via a class. 
+
+
+i) The difference between Dictator and Lieutenant and Integration Manager workflows is that in the Integration Managed workflow model, each developer has two repositories-- a private and a public one-- which they work on. In this model, developers pull from the central repository to their private repos but then only push to their public repositories which then get pushed to the integration manager who merges them. Additionally, in the Dictator Lieutenant model, the Lieutenants (developers) are responsible for conflict resolution which is done by the integration manager in the other workflow model. 
+
+j) Using a Dictator and Lieutenant workflow for 100 developer would be significantly more benefitial and efficient. Doing so would protect the central repository from bad code, and ensure that merge is happening correctly. This would also help in terms of bug fixing as conflict resolution is done by each of the developers to their own code which then must be merged and pushed by the dictator to ensure that no bad code will be pushed to the central repository. 
