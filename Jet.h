@@ -9,7 +9,7 @@
 
 class Jet: public PoweredVehicle{
 
-private:
+protected:
 	int numberOfEngines; 
 
 public:

@@ -40,4 +40,3 @@ double Boat::mileageEstimate(double time){
 string Boat::toString(){
 	return "-> Boat\n" + PoweredVehicle::toString() + "\n\tMotors: " + to_string(getNumberOfMotors());
 }
-}

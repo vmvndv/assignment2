@@ -4,6 +4,7 @@
 
 #include "Skateboard.h"
 #include <ctime>
+#include <cmath>
 
 Skateboard::Skateboard(string brand, string model){
 	setBrand(brand);
@@ -13,10 +14,11 @@ Skateboard::Skateboard(string brand, string model){
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double time){
-	double mileage = rand() % 0.4+0.1; 
+	double mileage = rand() % 4+1;
+	mileage /= 10; 
 	mileage *= time; 
 	if (time > 25 && time < 250){
-		mileage += rand()%floor(time/3)+1;
+		mileage += rand()% (int)floor(time/3)+1;
 	}
 	return mileage; 
 }

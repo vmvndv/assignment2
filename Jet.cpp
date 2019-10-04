@@ -22,11 +22,10 @@ void Jet::setNumberOfEngines(int numberOfEngines){
 	numberOfEngines = numberOfEngines; 
 }
 
-double mileageEstimate(double time){
+double Jet::mileageEstimate(double time){
 	double mileage = rand()%60+40;
-	int engines = getNumberOfEngines();
-	if (engines > 2){ 
-		mileage *= (5.5*engines); 
+	if (numberOfEngines > 2){ 
+		mileage *= (5.5*numberOfEngines); 
 		setFuelType("Rocket");
 	}
 	return mileage * time;
