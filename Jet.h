@@ -17,7 +17,7 @@ public:
 	virtual ~Jet();
 	int getNumberOfEngines();
 	void setNumberOfEngines(int numberOfEngines); 
-	virtual double mileage(double time); 
+	virtual double mileage(); 
 
 	virtual string toString(); 
 };
