@@ -13,7 +13,7 @@ private:
 	int numberOfEngines; 
 
 public:
-	explicit Jet(string brand, string model, int numberOfEngines=1); 
+	explicit Jet(string brand, string model, string fuelType, int numberOfEngines=1); 
 	virtual ~Jet();
 	int getNumberOfEngines();
 	void setNumberOfEngines(int numberOfEngines); 
